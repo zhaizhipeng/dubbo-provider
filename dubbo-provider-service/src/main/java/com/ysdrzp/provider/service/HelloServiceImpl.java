@@ -9,12 +9,9 @@ import org.springframework.stereotype.Service;
  */
 public class HelloServiceImpl implements HelloService {
 
-    /**
-     * 打个招呼
-     * @param name
-     * @return
-     */
     public String sayHello(String name) {
+        System.out.println("hello：" + name);
         return "hello," + name;
     }
+
 }
